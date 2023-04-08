@@ -10,7 +10,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0;
   color: var(--font-color-base);
@@ -45,15 +45,15 @@ a {
 
 .navbar {
   background-color: var(--header);
-  font-size: 20px;
+  font-size: 28px;
 }
 
-.navbar-nav {
+.navbar-nav, .input-line {
   display: flex;
   align-items: center;
 }
 
-i {
+.navbar-link i {
   color: var(--white);
 }
 
@@ -63,4 +63,22 @@ i {
 
 .navbar-link:nth-child(2) {
   margin-right: auto;
+}
+
+.phone-number {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 414px;
+}
+
+.form input, .form select {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.form i {
+  color: var(--icon);
 }
